@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&family=Shrikhand&display=swap");
+@import /Users/cyriellechasles/Documents/DW_P3/css/desktop.css screen and (min-width: 992px);
+@import /Users/cyriellechasles/Documents/DW_P3/css/tablet.css screen and (max-width: 992px);
+@import /Users/cyriellechasles/Documents/DW_P3/css/mobile.css screen and (max-width: 768px);
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.bouton {
+  border-radius: 40px;
+  background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  padding: 15px 20px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #ffffff;
+}
+
+.bouton:hover {
+  -webkit-box-shadow: rgba(149, 157, 165, 0.4) 0px 8px 24px;
+          box-shadow: rgba(149, 157, 165, 0.4) 0px 8px 24px;
+}
+
+header {
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+header img {
+  width: 170px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.localisation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #EAEAEA;
+}
+
+.localisation i {
+  margin-right: 10px;
+}
+
+.explication {
+  background-color: #F6F6F6;
+  padding: 40px 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.explication h2 {
+  margin: 0;
+}
+
+.explication p {
+  margin-bottom: 30px;
+}
+
+.fonctionnement {
+  padding: 0 5%;
+}
+
+.fonctionnement p:nth-child(1) {
+  margin-left: -25px;
+  background-color: #9356DC;
+  border-radius: 100%;
+  padding: 5px 10px;
+  color: #ffffff;
+}
+
+.fonctionnement i {
+  margin: 0 30px;
+  color: #7E7E7E;
+}
+
+.fonctionnement p:nth-child(3) {
+  font-weight: 700;
+}
+
+.carte_fonctionnement {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #F6F6F6;
+  padding: 10px 15px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.carte_fonctionnement:hover {
+  background-color: #F5EDFF;
+}
+
+.carte_fonctionnement:hover i {
+  color: #9356DC;
+}
+
+.liste_restaurants {
+  padding: 5%;
+  background-color: #F6F6F6;
+}
+
+.carte_restaurant {
+  width: 100%;
+  border-radius: 20px;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.carte_restaurant img {
+  width: 100%;
+  height: 230px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.restaurant_photo {
+  position: relative;
+}
+
+.restaurant_photo span {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #99E2D0;
+  padding: 5px 10px;
+  color: #008766;
+  border-radius: 3px;
+  font-size: 0.8em;
+  display: none;
+}
+
+.nouveau_restaurant span {
+  display: inline;
+}
+
+.restaurant_infos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
+}
+
+.restaurant_description h3, .restaurant_description p {
+  margin: 0;
+}
+/*# sourceMappingURL=style.css.map */
