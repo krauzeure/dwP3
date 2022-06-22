@@ -214,6 +214,10 @@ header .hidden {
   margin: 0;
 }
 
+.restaurant_like {
+  cursor: pointer;
+}
+
 .restaurant_like .fa-regular {
   -webkit-transform: translateX(20px);
           transform: translateX(20px);
@@ -222,11 +226,18 @@ header .hidden {
 .restaurant_like .fa-solid {
   -webkit-transform: scale(0%);
           transform: scale(0%);
-  color: linear-gradient(to bottom right, #FF79DA, #9356DC);
   -webkit-transition: -webkit-transform 500ms ease-in-out;
   transition: -webkit-transform 500ms ease-in-out;
   transition: transform 500ms ease-in-out;
   transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+}
+
+.restaurant_like .fa-solid:before {
+  display: initial;
+  background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .restaurant_like:hover .fa-solid {

@@ -167,14 +167,23 @@ header {
     }
 }
 
+.restaurant_like {
+    cursor: pointer;
+}
+
 .restaurant_like .fa-regular {
     transform: translateX(20px);
 }
 
 .restaurant_like .fa-solid {
     transform: scale(0%);
-    color: linear-gradient(to bottom right, $secondary, $primary);
     transition: transform 500ms ease-in-out;
+    &:before {
+        display: initial;
+        background: linear-gradient(to bottom right, $secondary, $primary);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 }
 .restaurant_like:hover .fa-solid{
         transform: scale(100%);
