@@ -15,16 +15,20 @@ body {
 
 .bouton {
     border-radius: 40px;
+    border: none;
     background: linear-gradient(to bottom right, $secondary, $primary);
     padding: 15px 20px;
     width: fit-content;
     color: #ffffff;
+    font-weight: 700;
+    cursor: pointer;
     box-shadow: rgba(149, 157, 165, 0.4) 0px 8px 24px;
     &:hover {
         box-shadow: rgba(149, 157, 165, 0.7) 0px 8px 24px;
         background: linear-gradient(to bottom right, $lightened-secondary, $lightened-primary);
     }
 }
+
 
 .bouton_large {
     padding: 15px 50px;
@@ -48,6 +52,9 @@ header {
     }
     .hidden {
         display: none;
+    }
+    a:visited {
+        color: #000000;
     }
 }
 
@@ -231,11 +238,11 @@ footer {
 }
 
 .load_circle {
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     border-radius: 100%;
     margin: 10px;
-    animation: load_circle 1000ms infinite ease-in-out alternate;
+    animation: load_circle 500ms infinite ease-in-out alternate;
 }
 
 .load_circle1 {
@@ -396,11 +403,11 @@ footer {
     align-items: center;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-    transition: all 700ms ease-in-out;
+    transition: all 400ms ease-in-out;
     i {
         color: #ffffff;
         transform: rotate(-359deg);
-        transition: transform 700ms ease-in-out;
+        transition: transform 400ms ease-in-out;
     }
 }
 
@@ -451,6 +458,41 @@ footer {
 }
 
 @media screen and (min-width: 1050px) {
+    
+    .liste_carte_fonctionnement {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .liste_restaurants {
+        max-width: 1200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+    }
+
+    .liste_carte_restaurants {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .carte_restaurant {
+            width: 430px;
+            margin-right: 40px;
+        }
+    }
+
+    .fonctionnement {
+        max-width: 1200px;
+        margin: auto;
+        i {
+            margin: 0 15px;
+        }
+        h2 {
+            text-align: center;
+        }
+    }
+    
     .item_menu {
         width: 300px;
     }

@@ -7,6 +7,7 @@ body {
 
 .bouton {
   border-radius: 40px;
+  border: none;
   background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   padding: 15px 20px;
@@ -14,6 +15,8 @@ body {
   width: -moz-fit-content;
   width: fit-content;
   color: #ffffff;
+  font-weight: 700;
+  cursor: pointer;
   -webkit-box-shadow: rgba(149, 157, 165, 0.4) 0px 8px 24px;
           box-shadow: rgba(149, 157, 165, 0.4) 0px 8px 24px;
 }
@@ -59,6 +62,10 @@ header img {
 
 header .hidden {
   display: none;
+}
+
+header a:visited {
+  color: #000000;
 }
 
 .localisation {
@@ -299,12 +306,12 @@ footer a {
 }
 
 .load_circle {
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   border-radius: 100%;
   margin: 10px;
-  -webkit-animation: load_circle 1000ms infinite ease-in-out alternate;
-          animation: load_circle 1000ms infinite ease-in-out alternate;
+  -webkit-animation: load_circle 500ms infinite ease-in-out alternate;
+          animation: load_circle 500ms infinite ease-in-out alternate;
 }
 
 .load_circle1 {
@@ -548,18 +555,18 @@ footer a {
           align-items: center;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
-  -webkit-transition: all 700ms ease-in-out;
-  transition: all 700ms ease-in-out;
+  -webkit-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
 }
 
 .item_checked i {
   color: #ffffff;
   -webkit-transform: rotate(-359deg);
           transform: rotate(-359deg);
-  -webkit-transition: -webkit-transform 700ms ease-in-out;
-  transition: -webkit-transform 700ms ease-in-out;
-  transition: transform 700ms ease-in-out;
-  transition: transform 700ms ease-in-out, -webkit-transform 700ms ease-in-out;
+  -webkit-transition: -webkit-transform 400ms ease-in-out;
+  transition: -webkit-transform 400ms ease-in-out;
+  transition: transform 400ms ease-in-out;
+  transition: transform 400ms ease-in-out, -webkit-transform 400ms ease-in-out;
 }
 
 .item_desc_prix {
@@ -616,6 +623,51 @@ footer a {
 }
 
 @media screen and (min-width: 1050px) {
+  .liste_carte_fonctionnement {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .liste_restaurants {
+    max-width: 1200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: auto;
+  }
+  .liste_carte_restaurants {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .liste_carte_restaurants .carte_restaurant {
+    width: 430px;
+    margin-right: 40px;
+  }
+  .fonctionnement {
+    max-width: 1200px;
+    margin: auto;
+  }
+  .fonctionnement i {
+    margin: 0 15px;
+  }
+  .fonctionnement h2 {
+    text-align: center;
+  }
   .item_menu {
     width: 300px;
   }
