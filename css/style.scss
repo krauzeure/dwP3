@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&family=Shrikhand&display=swap');
 
 $primary: #9356DC;
 $secondary: #FF79DA;
@@ -48,7 +48,6 @@ header {
     }
     img {
         width: 170px;
-        object-fit: contain;
     }
     .hidden {
         display: none;
@@ -75,16 +74,19 @@ header {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    h2 {
+    h1 {
         margin: 0;
+        font-size: 26px;
     }
     p {
         margin-bottom: 30px;
+        font-weight: 300;
     }
 }
 
 .fonctionnement {
-    padding: 0 5%;
+    padding: 5%;
+    background-color: #ffffff;
     p:nth-child(1) {
         margin-left: -25px;
         background-color: $primary;
@@ -103,7 +105,6 @@ header {
 
 .carte_fonctionnement {
     display: flex;
-    justify-content: flex-start;
     align-items: center;
     background-color: $light-grey;
     padding: 10px 15px;
@@ -124,7 +125,6 @@ header {
 }
 
 .carte_restaurant {
-    width: 100%;
     border-radius: 20px;
     background-color: #ffffff;
     margin-bottom: 20px;
@@ -172,6 +172,9 @@ header {
     h3, p {
         margin: 0;
     }
+    p {
+        font-weight: 300;
+    }
 }
 
 .restaurant_like {
@@ -200,7 +203,6 @@ header {
 footer {
     background-color: #353535;
     padding: 40px;
-    margin-top: 0;
     ul {
         list-style: none;
         padding-inline-start: 0;
@@ -208,7 +210,6 @@ footer {
     }
     img {
         width: 120px;
-        object-fit: contain;
         filter: invert(100%);
     }
     i {
@@ -392,6 +393,9 @@ footer {
         overflow: hidden;
         white-space: nowrap;
     }
+    .item_desc_prix p:first-of-type {
+        font-weight: 300;
+    }
 }
 
 .item_checked {
@@ -456,6 +460,10 @@ footer {
 }
 
 @media screen and (min-width: 1050px) {
+    
+    .carte_fonctionnement {
+        margin-bottom: 0;
+    }
     
     .liste_carte_fonctionnement {
         display: flex;

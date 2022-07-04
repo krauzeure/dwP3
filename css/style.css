@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&family=Shrikhand&display=swap");
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
@@ -56,8 +56,6 @@ header i {
 
 header img {
   width: 170px;
-  -o-object-fit: contain;
-     object-fit: contain;
 }
 
 header .hidden {
@@ -101,16 +99,19 @@ header a:visited {
   text-align: center;
 }
 
-.explication h2 {
+.explication h1 {
   margin: 0;
+  font-size: 26px;
 }
 
 .explication p {
   margin-bottom: 30px;
+  font-weight: 300;
 }
 
 .fonctionnement {
-  padding: 0 5%;
+  padding: 5%;
+  background-color: #ffffff;
 }
 
 .fonctionnement p:nth-child(1) {
@@ -134,9 +135,6 @@ header a:visited {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -162,7 +160,6 @@ header a:visited {
 }
 
 .carte_restaurant {
-  width: 100%;
   border-radius: 20px;
   background-color: #ffffff;
   margin-bottom: 20px;
@@ -221,6 +218,10 @@ header a:visited {
   margin: 0;
 }
 
+.restaurant_description p {
+  font-weight: 300;
+}
+
 .restaurant_like {
   cursor: pointer;
 }
@@ -255,7 +256,6 @@ header a:visited {
 footer {
   background-color: #353535;
   padding: 40px;
-  margin-top: 0;
 }
 
 footer ul {
@@ -267,8 +267,6 @@ footer ul {
 
 footer img {
   width: 120px;
-  -o-object-fit: contain;
-     object-fit: contain;
   -webkit-filter: invert(100%);
           filter: invert(100%);
 }
@@ -540,6 +538,10 @@ footer a {
   white-space: nowrap;
 }
 
+.item_desc .item_desc_prix p:first-of-type {
+  font-weight: 300;
+}
+
 .item_checked {
   background-color: #99E2D0;
   display: -webkit-box;
@@ -621,6 +623,9 @@ footer a {
 }
 
 @media screen and (min-width: 1050px) {
+  .carte_fonctionnement {
+    margin-bottom: 0;
+  }
   .liste_carte_fonctionnement {
     display: -webkit-box;
     display: -ms-flexbox;
