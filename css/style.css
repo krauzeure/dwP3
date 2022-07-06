@@ -383,7 +383,6 @@ footer a {
 }
 
 .menu_restaurant {
-  /*position: relative;*/
   background-color: #F6F6F6;
   padding-bottom: 30px;
 }
@@ -404,7 +403,6 @@ footer a {
   position: relative;
   top: -65px;
   background-color: #F6F6F6;
-  width: 100%;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
 }
