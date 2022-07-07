@@ -67,7 +67,7 @@ header {
     }
 }
 
-.explication {
+.explanation {
     background-color: $light-grey;
     padding: 40px 70px;
     display: flex;
@@ -84,7 +84,7 @@ header {
     }
 }
 
-.fonctionnement {
+.steps {
     padding: 5%;
     background-color: #ffffff;
     p:nth-child(1) {
@@ -103,7 +103,7 @@ header {
     }
 }
 
-.carte_fonctionnement {
+.steps_card {
     display: flex;
     align-items: center;
     background-color: $light-grey;
@@ -119,12 +119,12 @@ header {
         }
 }
 
-.liste_restaurants {
+.restaurants {
     padding: 5%;
     background-color: $light-grey;
 }
 
-.carte_restaurant {
+.restaurant_card {
     border-radius: 20px;
     background-color: #ffffff;
     margin-bottom: 20px;
@@ -161,7 +161,7 @@ header {
     display: inline;
 }
 
-.restaurant_infos {
+.restaurant_info {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -459,16 +459,16 @@ footer {
 
 @media screen and (min-width: 1050px) {
     
-    .carte_fonctionnement {
+    .steps_card {
         margin-bottom: 0;
     }
     
-    .liste_carte_fonctionnement {
+    .steps_column_cards {
         display: flex;
         justify-content: space-around;
     }
 
-    .liste_restaurants {
+    .restaurants {
         max-width: 1200px;
         display: flex;
         flex-direction: column;
@@ -476,17 +476,17 @@ footer {
         margin: auto;
     }
 
-    .liste_carte_restaurants {
+    .restaurants_column_cards {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        .carte_restaurant {
+        .restaurant_card {
             width: 430px;
             margin-right: 40px;
         }
     }
 
-    .fonctionnement {
+    .steps {
         max-width: 1200px;
         margin: auto;
         i {
