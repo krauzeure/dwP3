@@ -459,6 +459,10 @@ footer {
 
 @media screen and (min-width: 1050px) {
     
+    body {
+        background: #ffffff;
+    }
+
     .steps_card {
         margin-bottom: 0;
     }
@@ -474,6 +478,7 @@ footer {
         flex-direction: column;
         align-items: center;
         margin: auto;
+        background-color: #ffffff;
     }
 
     .restaurants_column_cards {
