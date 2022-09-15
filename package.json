@@ -1,0 +1,19 @@
+{
+  "name": "dw_p3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./css/sass/style.scss:./css/style.css --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krauzeure/dwP3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/krauzeure/dwP3/issues"
+  },
+  "homepage": "https://github.com/krauzeure/dwP3#readme"
+}
