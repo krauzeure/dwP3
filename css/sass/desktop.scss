@@ -47,10 +47,15 @@
         width: 300px;
     }
 
-    footer ul {
+    footer {
         display: flex;
-        li {
-            margin-right: 45px;
+        align-items: center;
+        flex-direction: column;
+        ul {
+            display: flex;
+            li {
+                margin-right: 45px;
+            }
         }
     }
 }
