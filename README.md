@@ -16,4 +16,4 @@ Pour compiler le SASS, utilisez la commande suivante :
 Enregistrez ensuite vos modifications, elles seront compilées dans le fichier style.css.
 
 ## Statut
-Le projet est en cours.
+Le projet est terminé.
