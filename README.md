@@ -12,6 +12,8 @@ SASS 1.54.9 compiled with dart2js 2.18.0.
 
 ## Compilation
 Pour compiler le SASS, utilisez la commande suivante :
+`npm install`
+Puis la commande suivante : 
 `npm run sass`
 Enregistrez ensuite vos modifications, elles seront compilées dans le fichier style.css.
 
